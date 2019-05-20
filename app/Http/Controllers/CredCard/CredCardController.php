@@ -76,8 +76,6 @@ class CredCardController extends Controller
 		
 		$amount = $this->tiraPontos($request->amount);
 
-
-		
 		$amount = (int) $this->calcular($amount , '100,0', '*');
 
 		// Configure seu merchant
@@ -102,9 +100,6 @@ class CredCardController extends Controller
 		        ->setCardNumber($request->card_number)
 		        ->setHolder($request->card_proprietary);
 
-
-
-
 		// Crie o pagamento na Cielo
 		try {
 		    // Configure o SDK com seu merchant e o ambiente apropriado para criar a venda
@@ -112,9 +107,6 @@ class CredCardController extends Controller
 
 
 		    return $this->savePaymant($sale);
-
-		    
-
 
 		    // E também podemos fazer seu cancelamento, se for o caso
 		    //$sale = (new CieloEcommerce($merchant, $this->environment))->cancelSale($paymentId, 15700);
@@ -127,8 +119,6 @@ class CredCardController extends Controller
 		    $error = $e->getCieloError();
 		    
 		    return $this->savePaymant($sale);
-
-		     
 		}
 
 	}
