@@ -1,0 +1,6 @@
+Seu cadastro foi efetuado com sucesso! Guarde suas credênciais do ambiente de Sandbox.
+
+MerchantId
+007f337e-8322-437f-a422-66bf23b42177
+MerchantKey
+HGGKCSVBTCQUJUVBZUDCXKDQWNYEVFIROKADPOEE
