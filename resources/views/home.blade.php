@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Sistema de Pagamento de Cartão de Crédito
+                <div class="card-header">Sistema de Pagamento de Cartão de Crédito (Ambiente de Testes)
                     @if(session('returnMessage'))
                         <div class="alert alert-success" role="alert">
                             <strong>{{session('returnMessage')->returnMessage}}</strong>
