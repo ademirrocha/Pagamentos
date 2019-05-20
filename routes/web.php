@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
 
@@ -26,6 +23,8 @@ Route::POST('createPayment', 'CredCard\CredCardController@createPayment')->name(
 Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
+
+Route::get('/', 'HomeController@welcome')->name('/');
 
 
 
