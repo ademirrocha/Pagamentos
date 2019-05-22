@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\CredCard;
+namespace App\Models\Local\CredCard;
 
 use Illuminate\Database\Eloquent\Model;
 

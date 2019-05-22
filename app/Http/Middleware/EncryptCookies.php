@@ -12,6 +12,8 @@ class EncryptCookies extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        'api',
+        'api/*',
+        'App\Http\Controllers\Api\CredCard',
     ];
 }

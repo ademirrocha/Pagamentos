@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\CredCard;
+namespace App\Http\Controllers\Local\CredCard;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -17,7 +17,7 @@ use Cielo\API30\Ecommerce\CreditCard;
 
 use Cielo\API30\Ecommerce\Request\CieloRequestException;
 
-use App\Models\Payments\Payments;
+use App\Models\Local\Payments\Payments;
 
 class CredCardController extends Controller
 {	
