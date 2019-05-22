@@ -72,8 +72,8 @@ class CredCardController extends Controller
 	public function createPayment(Request $request){
 
 		/*
-		form Method = POST:	
-				Campos:
+		form Method = POST action = http://payments-mizzy.herokuapp.com/public/api/createPaymentApi:	
+				com os Campos:
 					amount //em formato BRL (casas decimais separadas por vírgula)
 					securityCode //numero 3 ou 4 dígitos
 					expiration_date_month //numero 2 dígitos

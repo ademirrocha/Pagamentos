@@ -13,7 +13,7 @@
 
 
 
-Route::group(['namespace' => 'Api', 'prefix' => 'api' ], function(){
+Route::group(['middleware' => 'cors', 'namespace' => 'Api', 'prefix' => 'api' ], function(){
 
 	Route::GET('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
 	Route::POST('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
