@@ -38,6 +38,11 @@ class CredCardController extends Controller
 	 }
 
 
+	 public function formTestPaymant(){
+	 	return view('vendor.payments.form-payments');
+	 }
+
+
 	 public function calcular($v1, $v2, $op){
 	 	$valV1 = explode(',',$v1);
 		$valV2 = explode(',',$v2);

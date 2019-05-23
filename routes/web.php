@@ -15,7 +15,7 @@
 
 Route::group(['middleware' => 'cors', 'namespace' => 'Api', 'prefix' => 'api' ], function(){
 
-	Route::GET('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
+	//Route::GET('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
 	Route::POST('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
 
 });
@@ -23,8 +23,8 @@ Route::group(['middleware' => 'cors', 'namespace' => 'Api', 'prefix' => 'api' ],
 
 Route::group(['middleware', ['auth'], 'namespace' => 'Local' , 'prefix' => 'local' ], function(){
 
-	Route::GET('createPayment', 'CredCard\CredCardController@createPayment')->name('createPayment');
-	Route::POST('createPayment', 'CredCard\CredCardController@createPayment')->name('createPayment');
+	Route::GET('teste/pagamentos/cred_card', 'CredCard\CredCardController@formTestPaymant')->name('teste/pagamentos/cred_card');
+	Route::POST('teste/createPayment/pagamentos/cred_card', 'CredCard\CredCardController@createPayment')->name('teste/createPayment/pagamentos/cred_card');
 
 });
 
@@ -38,10 +38,8 @@ Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
 
-Route::get('/', 'HomeController@welcome')->name('/');
+Route::get('/', 'HomeController@home')->name('/');
 
 
 
-
-
-
+Auth::routes();

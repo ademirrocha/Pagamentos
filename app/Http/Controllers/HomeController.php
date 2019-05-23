@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Models\Local\Payments\Payments as PaymentsLocal;
+use App\Models\api\Payments\Payments as PaymentsApi;
 
 class HomeController extends Controller
 {
@@ -23,19 +26,26 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $qtdUsers = User::count();
 
-        return view('home');
+        $qtdPaymentsLocal = PaymentsLocal::where('returnCode', 4)
+                                ->orWhere('returnCode', 1)
+                                ->count();
+
+        $qtdPaymentsLocalTotal = PaymentsApi::count();
+
+        $qtdPaymentsApi = PaymentsApi::where('returnCode', 4)
+                                ->orWhere('returnCode', 1)
+                                ->count();
+        $qtdPaymentsApiTotal = PaymentsApi::count();
+
+        return view('home', compact('qtdUsers', 'qtdPaymentsLocal', 'qtdPaymentsApi', 'qtdPaymentsLocalTotal', 'qtdPaymentsApiTotal'));
     }
 
-    public function welcome()
+    public function home()
     {
-
-        return view('welcome');
+        return redirect('home');
     }
 
     
-
-
-
-
 }

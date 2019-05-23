@@ -92,6 +92,7 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         ),
         'J' => 
         array (
+            'JeroenNoten\\LaravelAdminLte\\' => 28,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -270,6 +271,10 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'JeroenNoten\\LaravelAdminLte\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -1938,6 +1943,20 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
+        'JeroenNoten\\LaravelAdminLte\\AdminLte' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/AdminLte.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\AdminLteMakeCommand' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/AdminLteMakeCommand.php',
+        'JeroenNoten\\LaravelAdminLte\\Console\\MakeAdminLteCommand' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Console/MakeAdminLteCommand.php',
+        'JeroenNoten\\LaravelAdminLte\\Events\\BuildingMenu' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Events/BuildingMenu.php',
+        'JeroenNoten\\LaravelAdminLte\\Http\\ViewComposers\\AdminLteComposer' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Http/ViewComposers/AdminLteComposer.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\ActiveChecker' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/ActiveChecker.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Builder' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Builder.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\ActiveFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/ActiveFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\ClassesFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/ClassesFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\FilterInterface' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/FilterInterface.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\GateFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/GateFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\HrefFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/HrefFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\Menu\\Filters\\SubmenuFilter' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/Menu/Filters/SubmenuFilter.php',
+        'JeroenNoten\\LaravelAdminLte\\ServiceProvider' => __DIR__ . '/..' . '/jeroennoten/laravel-adminlte/src/ServiceProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',

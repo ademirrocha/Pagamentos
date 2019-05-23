@@ -87,17 +87,44 @@ var tgdeveloper = {
 
 
         for (var flag in cards) {
-        	ext = 'png';
-        	img = document.getElementById('ico_card');
-            if(cards[flag].test(cardnumber)) {
-            	if(flag == 'aura' || flag == 'hipercard'){
-            		ext = 'jpg';
-            	}else{
-            		ext = 'png';
-            	}
 
-            	img.innerHTML = '<img width="30" height="30" src="vendor/pagamentos/img/'+flag+'.png"">';
-                if( 
+        	img = $('#ico-card');
+
+                img.html('');
+                img.addClass('fa-credit-card');
+                img.removeClass('fa-cc-visa');
+                img.removeClass('fa-cc-jcb');
+                img.removeClass('fa-cc-amex');
+                img.removeClass('fa-cc-mastercard');
+                img.removeClass('fa-cc-diners-club');
+                img.removeClass('fa-cc-discover');
+
+            if(cards[flag].test(cardnumber)) {
+               
+
+            	if(flag == 'hipercard'){
+                    img.html('<img width="30" height="30" src="vendor/pagamentos/img/hipercard.jpg"">');
+                }else if(flag == 'visa'){
+                    img.addClass('fa-cc-visa');
+                }else if(flag == 'jcb'){
+                    img.addClass('fa-cc-jcb');
+                }else if(flag == 'amex'){
+                    img.addClass('fa-cc-amex');
+                }else if(flag == 'mastercard'){
+                    img.addClass('fa-cc-mastercard');
+                }else if(flag == 'diners'){
+                    img.addClass('fa-cc-diners-club');
+                }else if(flag == 'discover'){
+                    img.addClass('fa-cc-discover');
+                }else if(flag == 'elo'){
+                    img.html('<img width="30" height="30" src="vendor/pagamentos/img/elo.png"">');
+                }else if(flag == 'aura'){
+                    img.html('<img width="30" height="30" src="vendor/pagamentos/img/aura.jpg"">');
+                }else{
+                    img.addClass('fa-credit-card');
+                }
+
+            	if( 
                 	amount == '' || proprietary == '' || expiration_date_month == 'MM' || 
                 	expiration_date_year == 'AAAA' || securityCode == ''){
                 	$("#btn_pagar").attr("disabled", 'disabled');
@@ -107,8 +134,7 @@ var tgdeveloper = {
                 return flag;
             }else{
             	$("#btn_pagar").attr("disabled", 'disabled');
-            	img.innerHTML = '<img width="30" height="30" src="vendor/pagamentos/img/default.png"">';
-                
+            	
             }
         }        
         

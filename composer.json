@@ -12,6 +12,7 @@
         "barryvdh/laravel-cors": "^0.11.3",
         "developercielo/api-3.0-php": "^1.2",
         "fideloper/proxy": "^4.0",
+        "jeroennoten/laravel-adminlte": "^1.25",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0"
     },
