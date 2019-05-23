@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Models\Local\Payments\Payments as PaymentsLocal;
-use App\Models\api\Payments\Payments as PaymentsApi;
+use App\Models\Api\Payments\Payments as PaymentsApi;
 
 class HomeController extends Controller
 {
