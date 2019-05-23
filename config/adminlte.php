@@ -115,10 +115,10 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Home',
+            'text'        => 'Dashboard',
             'url'         => 'home',
-            'icon'        => 'home',
-            'label'       => 4,
+            'icon'        => ' fa-dashboard (alias)',
+            'label'       => '',
             'label_color' => 'success',
         ],
         'ACCOUNT SETTINGS',
