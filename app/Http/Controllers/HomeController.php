@@ -32,7 +32,7 @@ class HomeController extends Controller
                                 ->orWhere('returnCode', 1)
                                 ->count();
 
-        $qtdPaymentsLocalTotal = PaymentsApi::count();
+        $qtdPaymentsLocalTotal = PaymentsLocal::count();
 
         $qtdPaymentsApi = PaymentsApi::where('returnCode', 4)
                                 ->orWhere('returnCode', 1)
