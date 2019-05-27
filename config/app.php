@@ -178,8 +178,6 @@ return [
         JeroenNoten\LaravelAdminLte\ServiceProvider::class,
 
 
-        GoogleMaps\ServiceProvider\GoogleMapsServiceProvider::class,
-
         
     ],
 
@@ -233,7 +231,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
 
-        'GoogleMaps' => GoogleMaps\Facade\GoogleMapsFacade::class,
 
        
     ],

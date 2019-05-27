@@ -100,11 +100,6 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         array (
             'Illuminate\\' => 11,
         ),
-        'G' => 
-        array (
-            'GoogleMaps\\' => 11,
-            'GeometryLibrary\\' => 16,
-        ),
         'F' => 
         array (
             'Fideloper\\Proxy\\' => 16,
@@ -293,14 +288,6 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
-        'GoogleMaps\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/alexpechkarev/google-maps/src',
-        ),
-        'GeometryLibrary\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/alexpechkarev/geometry-library',
-        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -356,13 +343,6 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
     );
 
     public static $prefixesPsr0 = array (
-        'U' => 
-        array (
-            'URLify' => 
-            array (
-                0 => __DIR__ . '/..' . '/jbroadway/urlify',
-            ),
-        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -394,6 +374,10 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         ),
         'C' => 
         array (
+            'Cornford\\Googlmapper' => 
+            array (
+                0 => __DIR__ . '/..' . '/cornford/googlmapper/src',
+            ),
             'Cielo' => 
             array (
                 0 => __DIR__ . '/..' . '/developercielo/api-3.0-php/src',
@@ -495,6 +479,31 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'Cielo\\API30\\Ecommerce\\Sale' => __DIR__ . '/..' . '/developercielo/api-3.0-php/src/Cielo/API30/Ecommerce/Sale.php',
         'Cielo\\API30\\Environment' => __DIR__ . '/..' . '/developercielo/api-3.0-php/src/Cielo/API30/Environment.php',
         'Cielo\\API30\\Merchant' => __DIR__ . '/..' . '/developercielo/api-3.0-php/src/Cielo/API30/Merchant.php',
+        'Cornford\\Googlmapper\\Contracts\\MappingBaseInterface' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Contracts/MappingBaseInterface.php',
+        'Cornford\\Googlmapper\\Contracts\\MappingInterface' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Contracts/MappingInterface.php',
+        'Cornford\\Googlmapper\\Contracts\\ModelingInterface' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Contracts/ModelingInterface.php',
+        'Cornford\\Googlmapper\\Contracts\\ObjectableInterface' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Contracts/ObjectableInterface.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperArgumentException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperArgumentException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperInstanceException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperInstanceException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperSearchException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperSearchException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperSearchKeyException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperSearchKeyException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperSearchLimitException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperSearchLimitException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperSearchResponseException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperSearchResponseException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperSearchResultException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperSearchResultException.php',
+        'Cornford\\Googlmapper\\Exceptions\\MapperSearchResultMalformedException' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Exceptions/MapperSearchResultMalformedException.php',
+        'Cornford\\Googlmapper\\Facades\\MapperFacade' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Facades/MapperFacade.php',
+        'Cornford\\Googlmapper\\Mapper' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Mapper.php',
+        'Cornford\\Googlmapper\\MapperBase' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/MapperBase.php',
+        'Cornford\\Googlmapper\\MapperServiceProvider' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/MapperServiceProvider.php',
+        'Cornford\\Googlmapper\\Models\\Circle' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Circle.php',
+        'Cornford\\Googlmapper\\Models\\Location' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Location.php',
+        'Cornford\\Googlmapper\\Models\\Map' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Map.php',
+        'Cornford\\Googlmapper\\Models\\Marker' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Marker.php',
+        'Cornford\\Googlmapper\\Models\\Polygon' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Polygon.php',
+        'Cornford\\Googlmapper\\Models\\Polyline' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Polyline.php',
+        'Cornford\\Googlmapper\\Models\\Rectangle' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Rectangle.php',
+        'Cornford\\Googlmapper\\Models\\Streetview' => __DIR__ . '/..' . '/cornford/googlmapper/src/Cornford/Googlmapper/Models/Streetview.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -1068,15 +1077,6 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
-        'GeometryLibrary\\MathUtil' => __DIR__ . '/..' . '/alexpechkarev/geometry-library/MathUtil.php',
-        'GeometryLibrary\\PolyUtil' => __DIR__ . '/..' . '/alexpechkarev/geometry-library/PolyUtil.php',
-        'GeometryLibrary\\SphericalUtil' => __DIR__ . '/..' . '/alexpechkarev/geometry-library/SphericalUtil.php',
-        'GoogleMaps\\Directions' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/Directions.php',
-        'GoogleMaps\\Facade\\GoogleMapsFacade' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/Facade/GoogleMapsFacade.php',
-        'GoogleMaps\\GoogleMaps' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/GoogleMaps.php',
-        'GoogleMaps\\Parameters' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/Parameters.php',
-        'GoogleMaps\\ServiceProvider\\GoogleMapsServiceProvider' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/ServiceProvider/GoogleMapsServiceProvider.php',
-        'GoogleMaps\\WebService' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/WebService.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -3930,8 +3930,6 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
-        'URLify' => __DIR__ . '/..' . '/jbroadway/urlify/URLify.php',
-        'URLifyTest' => __DIR__ . '/..' . '/jbroadway/urlify/tests/URLifyTest.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
