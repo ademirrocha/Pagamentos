@@ -100,6 +100,11 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         array (
             'Illuminate\\' => 11,
         ),
+        'G' => 
+        array (
+            'GoogleMaps\\' => 11,
+            'GeometryLibrary\\' => 16,
+        ),
         'F' => 
         array (
             'Fideloper\\Proxy\\' => 16,
@@ -288,6 +293,14 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
+        'GoogleMaps\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alexpechkarev/google-maps/src',
+        ),
+        'GeometryLibrary\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alexpechkarev/geometry-library',
+        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -343,6 +356,13 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
     );
 
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'URLify' => 
+            array (
+                0 => __DIR__ . '/..' . '/jbroadway/urlify',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -385,6 +405,7 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Api\\CredCard\\CredCardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/CredCard/CredCardController.php',
+        'App\\Http\\Controllers\\Api\\Googlmapper\\MapsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/Googlmapper/MapsController.php',
         'App\\Http\\Controllers\\Api\\Payments\\PaymentsContoller' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/Payments/PaymentsContoller.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -394,6 +415,7 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\Local\\CredCard\\CredCardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Local/CredCard/CredCardController.php',
+        'App\\Http\\Controllers\\Local\\Googlmapper\\MapsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Local/Googlmapper/MapsController.php',
         'App\\Http\\Controllers\\Local\\Payment\\PaymentController' => __DIR__ . '/../..' . '/app/Http/Controllers/Local/Payment/PaymentController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -551,12 +573,12 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'Egulias\\EmailValidator\\Exception\\DomainHyphened' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/DomainHyphened.php',
         'Egulias\\EmailValidator\\Exception\\DotAtEnd' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/DotAtEnd.php',
         'Egulias\\EmailValidator\\Exception\\DotAtStart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/DotAtStart.php',
-        'Egulias\\EmailValidator\\Exception\\ExpectedQPair' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingQPair.php',
         'Egulias\\EmailValidator\\Exception\\ExpectingAT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingAT.php',
         'Egulias\\EmailValidator\\Exception\\ExpectingATEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingATEXT.php',
         'Egulias\\EmailValidator\\Exception\\ExpectingCTEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingCTEXT.php',
         'Egulias\\EmailValidator\\Exception\\ExpectingDTEXT' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingDTEXT.php',
         'Egulias\\EmailValidator\\Exception\\ExpectingDomainLiteralClose' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingDomainLiteralClose.php',
+        'Egulias\\EmailValidator\\Exception\\ExpectingQPair' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/ExpectingQPair.php',
         'Egulias\\EmailValidator\\Exception\\InvalidEmail' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/InvalidEmail.php',
         'Egulias\\EmailValidator\\Exception\\NoDNSRecord' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/NoDNSRecord.php',
         'Egulias\\EmailValidator\\Exception\\NoDomainPart' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/Exception/NoDomainPart.php',
@@ -1046,6 +1068,15 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'GeometryLibrary\\MathUtil' => __DIR__ . '/..' . '/alexpechkarev/geometry-library/MathUtil.php',
+        'GeometryLibrary\\PolyUtil' => __DIR__ . '/..' . '/alexpechkarev/geometry-library/PolyUtil.php',
+        'GeometryLibrary\\SphericalUtil' => __DIR__ . '/..' . '/alexpechkarev/geometry-library/SphericalUtil.php',
+        'GoogleMaps\\Directions' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/Directions.php',
+        'GoogleMaps\\Facade\\GoogleMapsFacade' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/Facade/GoogleMapsFacade.php',
+        'GoogleMaps\\GoogleMaps' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/GoogleMaps.php',
+        'GoogleMaps\\Parameters' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/Parameters.php',
+        'GoogleMaps\\ServiceProvider\\GoogleMapsServiceProvider' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/ServiceProvider/GoogleMapsServiceProvider.php',
+        'GoogleMaps\\WebService' => __DIR__ . '/..' . '/alexpechkarev/google-maps/src/WebService.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -2684,6 +2715,9 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'PhpParser\\JsonDecoder' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/JsonDecoder.php',
         'PhpParser\\Lexer' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer.php',
         'PhpParser\\Lexer\\Emulative' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/Emulative.php',
+        'PhpParser\\Lexer\\TokenEmulator\\CoaleseEqualTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/CoaleseEqualTokenEmulator.php',
+        'PhpParser\\Lexer\\TokenEmulator\\FnTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/FnTokenEmulator.php',
+        'PhpParser\\Lexer\\TokenEmulator\\TokenEmulatorInterface' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/TokenEmulatorInterface.php',
         'PhpParser\\NameContext' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/NameContext.php',
         'PhpParser\\Node' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node.php',
         'PhpParser\\NodeAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/NodeAbstract.php',
@@ -2703,6 +2737,7 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'PhpParser\\Node\\Expr\\ArrayDimFetch' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayDimFetch.php',
         'PhpParser\\Node\\Expr\\ArrayItem' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/ArrayItem.php',
         'PhpParser\\Node\\Expr\\Array_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Array_.php',
+        'PhpParser\\Node\\Expr\\ArrowFunction' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/ArrowFunction.php',
         'PhpParser\\Node\\Expr\\Assign' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Assign.php',
         'PhpParser\\Node\\Expr\\AssignOp' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp.php',
         'PhpParser\\Node\\Expr\\AssignOp\\BitwiseAnd' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/AssignOp/BitwiseAnd.php',
@@ -3895,6 +3930,8 @@ class ComposerStaticInit8feef496f601ea6b9963cb19ebd59a56
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'URLify' => __DIR__ . '/..' . '/jbroadway/urlify/URLify.php',
+        'URLifyTest' => __DIR__ . '/..' . '/jbroadway/urlify/tests/URLifyTest.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',

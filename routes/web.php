@@ -23,10 +23,13 @@ Route::group(['middleware' => 'cors', 'namespace' => 'Api', 'prefix' => 'api' ],
 
 Route::group(['middleware', ['auth'], 'namespace' => 'Local' , 'prefix' => 'local' ], function(){
 
+	Route::GET('/maps', 'Googlmapper\MapsController@index')->name('/maps');
+
 	Route::GET('teste/pagamentos/cred_card', 'CredCard\CredCardController@formTestPaymant')->name('teste/pagamentos/cred_card');
 	Route::POST('teste/createPayment/pagamentos/cred_card', 'CredCard\CredCardController@createPayment')->name('teste/createPayment/pagamentos/cred_card');
 
 });
+
 
 
 

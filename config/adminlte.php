@@ -170,6 +170,14 @@ return [
                 ],
             ],
         ],
+        'Ferramentas',
+        [
+            'text'        => 'Maps',
+            'url'         => 'local/maps',
+            'icon'        => 'globe',
+            'label'       => '',
+            'label_color' => 'success',
+        ],
         'TESTES',
         [
             'text'       => 'Testar Pagamento',

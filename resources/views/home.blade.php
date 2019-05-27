@@ -7,6 +7,8 @@
 @stop
 
 @section('content')
+
+
 	<div class="col-lg-3 col-xs-6">
       <!-- small box -->
       <div class="small-box bg-aqua">
@@ -51,4 +53,22 @@
             <a href="#" class="small-box-footer">Detalhes <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+
+        <button onclick="enviaMensage();">Enviar Whats</button>
+}
+}
+
+        
+
 @stop
+
+
+@section('js')
+
+<!-- Scripts -->
+
+
+<script  src="{{asset('vendor/myzzy/js/wa.js')}}"></script>
+
+
+@endsection

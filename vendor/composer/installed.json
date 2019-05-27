@@ -1,5 +1,116 @@
 [
     {
+        "name": "alexpechkarev/geometry-library",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/alexpechkarev/geometry-library.git",
+            "reference": "ebbf02c3e907e0bd19c9474fd5eb77b9ca1ce414"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/alexpechkarev/geometry-library/zipball/ebbf02c3e907e0bd19c9474fd5eb77b9ca1ce414",
+            "reference": "ebbf02c3e907e0bd19c9474fd5eb77b9ca1ce414",
+            "shasum": ""
+        },
+        "time": "2015-09-11T15:40:41+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GeometryLibrary\\": "/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexander Pechkarev",
+                "email": "alexpechkarev@gmail.com"
+            }
+        ],
+        "description": "PHP Geometry library provides utility functions for the computation of geometric data on the surface of the Earth.",
+        "homepage": "https://alexpechkarev.github.io/geometry-library/",
+        "keywords": [
+            "computations polygons and polylines",
+            "encoding and decoding polyline paths utilities",
+            "google maps geometry library",
+            "php geometry library",
+            "spherical geometry utilities"
+        ]
+    },
+    {
+        "name": "alexpechkarev/google-maps",
+        "version": "1.0.9",
+        "version_normalized": "1.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/alexpechkarev/google-maps.git",
+            "reference": "fa6b843e2c89263f233c1ebaaa6603cbb7aed966"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/alexpechkarev/google-maps/zipball/fa6b843e2c89263f233c1ebaaa6603cbb7aed966",
+            "reference": "fa6b843e2c89263f233c1ebaaa6603cbb7aed966",
+            "shasum": ""
+        },
+        "require": {
+            "alexpechkarev/geometry-library": "1.0.0",
+            "illuminate/support": "5.*",
+            "jbroadway/urlify": "^1.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.7.*"
+        },
+        "time": "2018-01-09T18:23:57+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GoogleMaps\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexander Pechkarev",
+                "email": "alexpechkarev@gmail.com"
+            }
+        ],
+        "description": "Collection of Google Maps API Web Services for Laravel",
+        "homepage": "https://alexpechkarev.github.io/google-maps/",
+        "keywords": [
+            "Google Maps API",
+            "directions api",
+            "distance matrix api",
+            "elevation api",
+            "geocoding api",
+            "geolocation api",
+            "google maps api for laravel",
+            "google maps web service for laravel",
+            "laravel google maps api",
+            "places api web service",
+            "roads api",
+            "time zone api"
+        ]
+    },
+    {
         "name": "asm89/stack-cors",
         "version": "1.2.0",
         "version_normalized": "1.2.0.0",
@@ -489,17 +600,17 @@
     },
     {
         "name": "egulias/email-validator",
-        "version": "2.1.7",
-        "version_normalized": "2.1.7.0",
+        "version": "2.1.8",
+        "version_normalized": "2.1.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/egulias/EmailValidator.git",
-            "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e"
+            "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
-            "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
+            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c26463ff9241f27907112fbcd0c86fa670cfef98",
+            "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98",
             "shasum": ""
         },
         "require": {
@@ -514,7 +625,7 @@
         "suggest": {
             "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
         },
-        "time": "2018-12-04T22:38:24+00:00",
+        "time": "2019-05-16T22:02:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -908,6 +1019,65 @@
         "description": "Highlight PHP code in terminal"
     },
     {
+        "name": "jbroadway/urlify",
+        "version": "1.1.2-stable",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jbroadway/urlify.git",
+            "reference": "78118277ba31189fef18323bb78e9c1b89254dcc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jbroadway/urlify/zipball/78118277ba31189fef18323bb78e9c1b89254dcc",
+            "reference": "78118277ba31189fef18323bb78e9c1b89254dcc",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5"
+        },
+        "time": "2018-12-08T15:51:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "URLify": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause-Clear"
+        ],
+        "authors": [
+            {
+                "name": "Johnny Broadway",
+                "email": "johnny@johnnybroadway.com",
+                "homepage": "http://www.johnnybroadway.com/"
+            }
+        ],
+        "description": "PHP port of URLify.js from the Django project. Transliterates non-ascii characters for use in URLs.",
+        "homepage": "https://github.com/jbroadway/urlify",
+        "keywords": [
+            "encode",
+            "iconv",
+            "link",
+            "slug",
+            "translit",
+            "transliterate",
+            "transliteration",
+            "url",
+            "urlify"
+        ]
+    },
+    {
         "name": "jeroennoten/laravel-adminlte",
         "version": "v1.25.1",
         "version_normalized": "1.25.1.0",
@@ -964,17 +1134,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v5.8.17",
-        "version_normalized": "5.8.17.0",
+        "version": "v5.8.18",
+        "version_normalized": "5.8.18.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "33c04dd2a431adeeb49926a4f2b20590cc033ca2"
+            "reference": "9f571be04435883dab6f23ecfadb204273b7f527"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/33c04dd2a431adeeb49926a4f2b20590cc033ca2",
-            "reference": "33c04dd2a431adeeb49926a4f2b20590cc033ca2",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/9f571be04435883dab6f23ecfadb204273b7f527",
+            "reference": "9f571be04435883dab6f23ecfadb204273b7f527",
             "shasum": ""
         },
         "require": {
@@ -1077,7 +1247,7 @@
             "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.1).",
             "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
         },
-        "time": "2019-05-14T16:02:41+00:00",
+        "time": "2019-05-21T16:40:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1178,17 +1348,17 @@
     },
     {
         "name": "league/flysystem",
-        "version": "1.0.51",
-        "version_normalized": "1.0.51.0",
+        "version": "1.0.52",
+        "version_normalized": "1.0.52.0",
         "source": {
             "type": "git",
             "url": "https://github.com/thephpleague/flysystem.git",
-            "reference": "755ba7bf3fb9031e6581d091db84d78275874396"
+            "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/755ba7bf3fb9031e6581d091db84d78275874396",
-            "reference": "755ba7bf3fb9031e6581d091db84d78275874396",
+            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c5a5097156387970e6f0ccfcdf03f752856f3391",
+            "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391",
             "shasum": ""
         },
         "require": {
@@ -1218,7 +1388,7 @@
             "spatie/flysystem-dropbox": "Allows you to use Dropbox storage",
             "srmklive/flysystem-dropbox-v2": "Allows you to use Dropbox storage for PHP 5 applications"
         },
-        "time": "2019-03-30T13:22:34+00:00",
+        "time": "2019-05-20T20:21:14+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1523,17 +1693,17 @@
     },
     {
         "name": "nikic/php-parser",
-        "version": "v4.2.1",
-        "version_normalized": "4.2.1.0",
+        "version": "v4.2.2",
+        "version_normalized": "4.2.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nikic/PHP-Parser.git",
-            "reference": "5221f49a608808c1e4d436df32884cbc1b821ac0"
+            "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/5221f49a608808c1e4d436df32884cbc1b821ac0",
-            "reference": "5221f49a608808c1e4d436df32884cbc1b821ac0",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
+            "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
             "shasum": ""
         },
         "require": {
@@ -1543,7 +1713,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.5 || ^7.0"
         },
-        "time": "2019-02-16T20:54:15+00:00",
+        "time": "2019-05-25T20:07:01+00:00",
         "bin": [
             "bin/php-parse"
         ],

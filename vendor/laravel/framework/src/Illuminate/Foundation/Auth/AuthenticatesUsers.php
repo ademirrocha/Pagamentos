@@ -106,8 +106,6 @@ trait AuthenticatesUsers
 
         $this->clearLoginAttempts($request);
 
-        
-
         return $this->authenticated($request, $this->guard()->user())
                 ?: redirect()->intended($this->redirectPath());
     }
