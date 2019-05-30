@@ -8,10 +8,19 @@ use App\Http\Controllers\Controller;
 
 class MapsController extends Controller
 {
-    public function index(){
-    
-    
-    	
+    public function mapa(){
+
     	return view('vendor.googlemaps.map');
+
 	}
+
+
+    public function mapAutoComplete(){
+
+        return view('vendor.googlemaps.map3');
+
+    }
+
+
+
 }

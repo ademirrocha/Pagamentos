@@ -18,12 +18,21 @@ Route::group(['middleware' => 'cors', 'namespace' => 'Api', 'prefix' => 'api' ],
 	//Route::GET('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
 	Route::POST('createPaymentApi', 'CredCard\CredCardController@createPayment')->name('createPaymentApi');
 
+
+	Route::GET('/maps', 'Googlmapper\MapsController@mapa')->name('/maps');
+	
+	Route::GET('/maps-autocomplete', 'Googlmapper\MapsController@mapAutoComplete')->name('/maps-autocomplete');
+
 });
 
 
 Route::group(['middleware', ['auth'], 'namespace' => 'Local' , 'prefix' => 'local' ], function(){
 
-	Route::GET('/maps', 'Googlmapper\MapsController@index')->name('/maps');
+	Route::GET('/maps', 'Googlmapper\MapsController@mapa')->name('/maps');
+	
+	Route::GET('/maps-autocomplete', 'Googlmapper\MapsController@mapAutoComplete')->name('/maps-autocomplete');
+
+
 
 	Route::GET('teste/pagamentos/cred_card', 'CredCard\CredCardController@formTestPaymant')->name('teste/pagamentos/cred_card');
 	Route::POST('teste/createPayment/pagamentos/cred_card', 'CredCard\CredCardController@createPayment')->name('teste/createPayment/pagamentos/cred_card');

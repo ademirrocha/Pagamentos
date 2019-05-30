@@ -173,11 +173,19 @@ return [
         'Ferramentas',
         [
             'text'        => 'Maps',
-            'url'         => 'local/maps',
             'icon'        => 'globe',
-            'label'       => '',
-            'label_color' => 'success',
+            'submenu' => [
+                [
+                    'text' => 'Mapa',
+                    'url'  => 'local/maps',
+                ],
+                [
+                    'text' => 'Auto Complete',
+                    'url'  => 'local/maps-autocomplete',
+                ],
+            ],
         ],
+
         'TESTES',
         [
             'text'       => 'Testar Pagamento',
