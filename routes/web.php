@@ -23,6 +23,15 @@ Route::group(['middleware' => 'cors', 'namespace' => 'Api', 'prefix' => 'api' ],
 	
 	Route::GET('/maps-autocomplete', 'Googlmapper\MapsController@mapAutoComplete')->name('/maps-autocomplete');
 
+
+	Route::GET('/rotas-maps-autocomplete', 'Googlmapper\MapsController@mapRotas')->name('/rotas-maps-autocomplete');
+
+
+
+
+
+
+
 });
 
 
