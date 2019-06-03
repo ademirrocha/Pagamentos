@@ -112,6 +112,9 @@ public function mapAutoComplete(Request $request){
         font-family: "Roboto","sans-serif";
         line-height: 30px;
         padding-left: 10px;
+
+        max-heigth: 100%;
+        overflow: auto;
       }
 
       #right-panel select, #right-panel input {
