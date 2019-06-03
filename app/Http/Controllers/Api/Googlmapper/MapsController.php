@@ -279,7 +279,7 @@ function AutocompleteDirectionsHandler(map) {
   this.map = map;
   this.originPlaceId = null;
   this.destinationPlaceId = null;
-  this.travelMode = 'WALKING';
+  this.travelMode = 'DRIVING';
   this.directionsService = new google.maps.DirectionsService;
   this.directionsDisplay = new google.maps.DirectionsRenderer({
           draggable: true,
