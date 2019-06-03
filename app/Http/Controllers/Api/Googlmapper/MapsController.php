@@ -108,7 +108,33 @@ public function mapAutoComplete(Request $request){
     <style>
 
 
+    #right-panel {
+        font-family: "Roboto","sans-serif";
+        line-height: 30px;
+        padding-left: 10px;
+      }
 
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+
+      #right-panel {
+        float: right;
+        width: 34%;
+        height: 100%;
+      }
+      .panel {
+        height: 100%;
+        overflow: auto;
+      }
 
 
       /* Always set the map height explicitly to define the size of the div
@@ -184,6 +210,9 @@ public function mapAutoComplete(Request $request){
     </div>
 
     <div id="map"></div>
+    <div id="right-panel">
+      <p>Total Distance: <span id="total"></span></p>
+    </div>
 
     ';
 
@@ -203,6 +232,19 @@ function initMap() {
 
           zoom: 16
         });
+
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          draggable: true,
+           map: map,
+          panel: document.getElementById('right-panel')
+        });
+
+        directionsDisplay.addListener('directions_changed', function() {
+          computeTotalDistance(directionsDisplay.getDirections());
+        });
+
+
         infoWindow = new google.maps.InfoWindow;
 
         // Try HTML5 geolocation.
@@ -229,7 +271,8 @@ function initMap() {
 
  
 
-  new AutocompleteDirectionsHandler(map);
+  new AutocompleteDirectionsHandler(map, directionsService,
+            directionsDisplay);
 }
 
 /**
@@ -319,6 +362,8 @@ AutocompleteDirectionsHandler.prototype.route = function() {
       function(response, status) {
         if (status === 'OK') {
           me.directionsDisplay.setDirections(response);
+
+
         } else {
           window.alert('Directions request failed due to ' + status);
         }
