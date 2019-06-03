@@ -281,7 +281,11 @@ function AutocompleteDirectionsHandler(map) {
   this.destinationPlaceId = null;
   this.travelMode = 'WALKING';
   this.directionsService = new google.maps.DirectionsService;
-  this.directionsDisplay = new google.maps.DirectionsRenderer;
+  this.directionsDisplay = new google.maps.DirectionsRenderer({
+          draggable: true,
+          map: map,
+          panel: document.getElementById('right-panel')
+        });
   this.directionsDisplay.setMap(map);
 
   this.directionsDisplay.addListener('directions_changed', function() {
