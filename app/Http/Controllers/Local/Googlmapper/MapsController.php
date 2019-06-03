@@ -21,6 +21,10 @@ class MapsController extends Controller
 
     }
 
+    public function mapRotas(){
+    	 return view('vendor.googlemaps.rotas_maps');
+    }
+
 
 
 }

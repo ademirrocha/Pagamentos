@@ -183,6 +183,10 @@ return [
                     'text' => 'Auto Complete',
                     'url'  => 'local/maps-autocomplete',
                 ],
+                [
+                    'text' => 'Mapa + Rotas',
+                    'url'  => 'local/rotas-maps-autocomplete',
+                ],
             ],
         ],
 

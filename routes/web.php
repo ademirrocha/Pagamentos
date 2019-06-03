@@ -51,6 +51,9 @@ Route::group(['middleware', ['auth'], 'namespace' => 'Local' , 'prefix' => 'loca
 	Route::GET('teste/pagamentos/cred_card', 'CredCard\CredCardController@formTestPaymant')->name('teste/pagamentos/cred_card');
 	Route::POST('teste/createPayment/pagamentos/cred_card', 'CredCard\CredCardController@createPayment')->name('teste/createPayment/pagamentos/cred_card');
 
+
+	Route::GET('/rotas-maps-autocomplete', 'Googlmapper\MapsController@mapRotas')->name('/rotas-maps-autocomplete');
+
 });
 
 
