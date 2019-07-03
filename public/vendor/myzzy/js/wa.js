@@ -3,7 +3,7 @@ function enviaMensage(){
 
 
     var options = {
- whatsapp: "+5538999757920", // Número do WhatsApp
+ whatsapp: "+5561984548100", // Número do WhatsApp
  company_logo_url: "//www.webcreative.com.br/themes/webcreative/images/perfil.jpg", // URL com o logo da empresa
  greeting_message: "Olá! A primeira mensagem a ser exibida, escreva aqui.", // Texto principal
  call_to_action: "Uma mensagem convidando para enviar um whatsapp.", // Chamada para ação

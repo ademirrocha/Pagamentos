@@ -117,6 +117,8 @@
 
                 @yield('content')
 
+                
+
             </section>
             <!-- /.content -->
             @if(config('adminlte.layout') == 'top-nav')

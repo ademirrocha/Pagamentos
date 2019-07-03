@@ -54,11 +54,8 @@
           </div>
         </div>
 
-        <button onclick="enviaMensage();">Enviar Whats</button>
-}
-}
-
         
+       
 
 @stop
 
@@ -69,6 +66,8 @@
 
 
 <script  src="{{asset('vendor/myzzy/js/wa.js')}}"></script>
+
+<script type="text/javascript"> enviaMensage(); </script> 
 
 
 @endsection

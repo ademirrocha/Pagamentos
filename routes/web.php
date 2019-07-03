@@ -70,5 +70,10 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@home')->name('/');
 
 
+Route::get('whats', 'HomeController@whats')->name('whats');
+
+
+
+
 
 Auth::routes();

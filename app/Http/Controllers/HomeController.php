@@ -48,5 +48,12 @@ class HomeController extends Controller
         return redirect('home');
     }
 
+
+
+    public function whats(){
+
+        return view('vendor.myzzy.whats');
+    }
+
     
 }
